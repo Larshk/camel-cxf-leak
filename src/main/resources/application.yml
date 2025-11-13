@@ -1,0 +1,11 @@
+camel:
+  main:
+    name: cxf-leak
+    devConsoleEnabled: true
+
+# Setting the following property can act as a work-around for the leak
+#spring:
+#  task:
+#    execution:
+#      pool:
+#        allow-core-thread-timeout: false

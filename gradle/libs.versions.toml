@@ -1,0 +1,20 @@
+[versions]
+#camelVersion = "4.10.7"
+#springBootVersion = "3.4.10"
+#camelVersion = "4.14.2"
+#springBootVersion = "3.5.7"
+camelVersion = "4.16.0"
+springBootVersion = "3.5.7"
+
+[libraries]
+camel-boot-bom = { module = "org.apache.camel.springboot:camel-spring-boot-bom", version.ref = "camelVersion" }
+camel-spring-boot-starter = { module = "org.apache.camel.springboot:camel-spring-boot-starter" }
+camel-direct-starter = { module = "org.apache.camel.springboot:camel-direct-starter" }
+camel-platform-http-starter = { module = "org.apache.camel.springboot:camel-platform-http-starter" }
+camel-rest-starter = { module = "org.apache.camel.springboot:camel-rest-starter" }
+camel-cxf-soap-starter = { module = "org.apache.camel.springboot:camel-cxf-soap-starter" }
+
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+
+[plugins]
+springframeworkBoot = { id = "org.springframework.boot", version.ref = "springBootVersion" }
